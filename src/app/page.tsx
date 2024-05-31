@@ -1,18 +1,10 @@
-import React from 'react'
-import { PageHeader } from './components/PageHeader'
+import Image from "next/image";
+import Navbar from "./components/Navbar";
 
-const page = () => {
-  return (
-    <div className='w-full h-full flex justify bg-center items-center relative bg-peach'>
-      <div className='max-w-screen-lg w-full h-full flex relative'>
-        <PageHeader />
-        <div className='fixed w-full h-1080px'>Home</div>
-        <div>About</div>
-        <div>Outlets</div>
-        <div>Footer</div>
+export default function Home() {
+  return  <div>
+      <div>
+      <Navbar />
       </div>
     </div>
-  )
 }
-
-export default page
